@@ -1,3 +1,4 @@
+import java.util.*;
 public class Cipertext {
     public static String encrypt(String text, int shift) {
         StringBuilder result = new StringBuilder();
