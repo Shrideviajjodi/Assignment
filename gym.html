@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gym Membership</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+}
+
+/* Container */
+.container {
+    max-width: 400px;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Inputs */
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input:focus, select:focus {
+    border: 2px solid #28a745;
+    outline: none;
+}
+
+/* Gender inline */
+.gender {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn {
+    background: #28a745;
+    color: white;
+}
+
+.reset-btn {
+    background: #ccc;
+}
+
+/* Videos */
+.videos {
+    text-align: center;
+    margin-top: 30px;
+}
+
+iframe {
+    margin: 10px;
+    border-radius: 8px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h2>Gym Membership</h2>
+
+<form>
+
+<label>Name</label>
+<input type="text" required>
+
+<label>Age</label>
+<input type="number" min="16" required>
+
+<label>Gender</label>
+<div class="gender">
+    <label><input type="radio" name="gender" required> Male</label>
+    <label><input type="radio" name="gender"> Female</label>
+    <label><input type="radio" name="gender"> Other</label>
+</div>
+
+<label>Fitness Goal</label>
+<select required>
+    <option value="">Select</option>
+    <option>Weight Loss</option>
+    <option>Muscle Gain</option>
+    <option>Weight Gain</option>
+    <option>Flexibility</option>
+</select>
+
+<label>Workout Time</label>
+<input type="time" required>
+
+<label>
+<input type="checkbox" required> I agree to health terms
+</label>
+
+<button type="submit" class="submit-btn">Submit</button>
+<button type="reset" class="reset-btn">Reset</button>
+
+</form>
+
+</div>
+
+<div class="videos">
+<h3>Workout Videos</h3>
+
+<iframe width="300" height="200"
+src="https://www.youtube.com/embed/UItWltVZZmE"></iframe>
+
+<iframe width="300" height="200"
+src="https://www.youtube.com/embed/2pLT-olgUJs"></iframe>
+
+</div>
+
+</body>
+</html>
